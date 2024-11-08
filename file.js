@@ -9,7 +9,7 @@ fs.appendFileSync("./test.txt", new Date().getDate().toLocaleString());
 
 fs.appendFileSync("./test.txt", 'Hey There\n');
 
-fs.appendFileSync("./test.txt", '${Date.now()} Hey There \n');
+fs.appendFileSync("./test.txt", `${Date.now()} Hey There \n`);
 
 fs.cpSync('./test.txt', './copy.txt');
 
